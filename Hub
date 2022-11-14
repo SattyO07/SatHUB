@@ -1,0 +1,47 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("SatHub", "DarkTheme")
+
+-- Tabs
+
+local Tab1 = Window:NewTab("Hacks")
+local Tab2 = Window:NewTab("Settings")
+local Tab3 = Window:NewTab("Info")
+local Tab1Section = Tab1:NewSection("Guis")
+local Tab2Section = Tab1:NewSection("Scripts")
+local Tab3Section = Tab2:NewSection("Keybind")
+local Tab4Section = Tab2:NewSection("Color")
+local Tab5Section = Tab3:NewSection("SocialMedia")
+
+-- Hacks
+
+Tab1Section:NewButton("Infinite Yield", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() 
+end)
+
+Tab1Section:NewButton("Stk Gui", "Work on Stk", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/StkGui'))() 
+end)
+
+Tab1Section:NewButton("Afk Gui", "Any Game", function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+end)
+
+Tab1Section:NewButton("Trollface Gui", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/TrollFaceGui'))() 
+end)
+
+Tab2Section:NewButton("AntiFling", "Any Game", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/AntiFling'))() 
+end)
+
+-- Settings
+
+Tab3Section:NewKeybind("Keybind", "Open/Close UI", Enum.KeyCode.E, function()
+	Library:ToggleUI()
+end)
+
+Tab4Section:NewColorPicker("Color Text", "Color Info", Color3.fromRGB(0,0,0), function(color)
+    print(color)
+    -- Second argument is the default color
+end)
+
+-- Info
+
+Tab5Section:NewLabel("Sat007#1969")
+
