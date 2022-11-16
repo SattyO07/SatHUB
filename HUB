@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("SatHub", "DarkTheme")
+local Window = Library.CreateLib("SatHub V2", "Ocean")
 
 -- Tabs
 
@@ -10,7 +10,8 @@ local Tab1Section = Tab1:NewSection("Guis")
 local Tab2Section = Tab1:NewSection("Scripts")
 local Tab3Section = Tab2:NewSection("Keybind")
 local Tab4Section = Tab2:NewSection("Color")
-local Tab5Section = Tab3:NewSection("SocialMedia")
+local Tab5Section = Tab3:NewSection("DISCORD:")
+local Tab6Section = Tab3:NewSection("UPDATE:")
 
 -- Hacks
 
@@ -26,13 +27,24 @@ end)
 Tab1Section:NewButton("Trollface Gui", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/TrollFaceGui'))() 
 end)
 
+Tab1Section:NewButton("Unnamed ESP", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/Unnamed%20ESP'))() 
+end)
+
 Tab2Section:NewButton("AntiFling", "Any Game", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/AntiFling'))() 
 end)
 
+Tab2Section:NewButton("Server Hop", "Any Game", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SattyO07/Scripts/main/Server%20Hop",true))();
+end)
+
+Tab2Section:NewButton("Server Rejoin", "Any Game", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1gtVMUz3"))()
+end)
+
 -- Settings
 
-Tab3Section:NewKeybind("Keybind", "Open/Close UI", Enum.KeyCode.E, function()
+Tab3Section:NewKeybind("Keybind UI", "Open/Close UI", Enum.KeyCode.E, function()
 	Library:ToggleUI()
 end)
 
@@ -44,4 +56,5 @@ end)
 -- Info
 
 Tab5Section:NewLabel("Sat007#1969")
-
+Tab6Section:NewLabel("Server Rejoin/Hopping")
+Tab6Section:NewLabel("Esp")
