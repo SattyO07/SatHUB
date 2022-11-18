@@ -30,6 +30,9 @@ end)
 Tab1Section:NewButton("ESP Gui", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua'))()
 end)
 
+Tab1Section:NewButton("Hoho Hun", "Bloxfruit", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
 Tab2Section:NewButton("AntiFling", "Any Game", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/AntiFling'))() 
 end)
@@ -56,5 +59,4 @@ end)
 -- Info
 
 Tab5Section:NewLabel("Sat007#1969")
-Tab6Section:NewLabel("Server Rejoin/Hopping")
-Tab6Section:NewLabel("Esp")
+Tab6Section:NewLabel("Added Hoho Hub")
