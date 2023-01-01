@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("SatHub V2", "Ocean")
+local Window = Library.CreateLib("SatHub V3", "Ocean")
 
 -- Tabs
 
@@ -9,10 +9,10 @@ local Tab3 = Window:NewTab("Info")
 local Tab1Section = Tab1:NewSection("Guis")
 local Tab2Section = Tab1:NewSection("Server")
 local Tab3Section = Tab1:NewSection("Mics")
-local Tab3Section = Tab2:NewSection("Keybind")
-local Tab4Section = Tab2:NewSection("Color")
-local Tab5Section = Tab3:NewSection("DISCORD:")
-local Tab6Section = Tab3:NewSection("UPDATE:")
+local Tab4Section = Tab2:NewSection("Keybind")
+local Tab5Section = Tab2:NewSection("Color")
+local Tab6Section = Tab3:NewSection("DISCORD:")
+local Tab7Section = Tab3:NewSection("UPDATE:")
 
 -- Hacks
 
@@ -22,7 +22,7 @@ end)
 Tab1Section:NewButton("Stk Gui", "Work on Stk", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/StkGui'))() 
 end)
 
-Tab1Section:NewButton("RoGhoul  Gui", "Work on Roghoul", function()   loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
+Tab1Section:NewButton("RoGhoul Gui", "Work on Roghoul", function()   loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
 end)
 
 Tab1Section:NewButton("Hoho Hub", "Work on Bloxfruit", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
@@ -32,10 +32,6 @@ Tab1Section:NewButton("Afk Gui", "Any Game", function()   loadstring(game:HttpGe
 end)
 
 Tab1Section:NewButton("Trollface Gui", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/TrollFaceGui'))() 
-end)
-
-Tab3Section:NewButton("AntiFling", "Any Game", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/AntiFling'))() 
 end)
 
 Tab2Section:NewButton("Server Hop", "Any Game", function()
@@ -50,19 +46,24 @@ Tab2Section:NewButton("Server Rejoin", "Any Game", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/1gtVMUz3"))()
 end)
 
+Tab3Section:NewButton("AntiFling", "Any Game", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/AntiFling'))() 
+end)
+
 -- Settings
 
-Tab3Section:NewKeybind("Keybind UI", "Open/Close UI", Enum.KeyCode.E, function()
+Tab4Section:NewKeybind("Keybind UI", "Open/Close UI", Enum.KeyCode.E, function()
 	Library:ToggleUI()
 end)
 
-Tab4Section:NewColorPicker("Color Text", "Color Info", Color3.fromRGB(0,0,0), function(color)
+Tab5Section:NewColorPicker("Color Text", "Color Info", Color3.fromRGB(0,0,0), function(color)
     print(color)
     -- Second argument is the default color
 end)
 
 -- Info
 
-Tab5Section:NewLabel("Sat007#1969")
-Tab6Section:NewLabel("RoGhoul Added")
+Tab6Section:NewLabel("Sat007#1969")
+Tab7Section:NewLabel("RoGhoul Added")
+Tab7Section:NewLabel("Update Infinite Yield")
 Tab7Section:NewLabel("Fix Title")
