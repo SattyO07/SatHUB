@@ -27,7 +27,7 @@ end)
 Tab1Section:NewButton("Trollface Gui", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/TrollFaceGui'))() 
 end)
 
-Tab1Section:NewButton("ESP Gui", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua'))()
+Tab1Section:NewButton("RoGhoul  Gui", "Work on Roghoul", function()   loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
 end)
 
 Tab1Section:NewButton("Hoho Hun", "Work on Bloxfruit", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
@@ -59,4 +59,4 @@ end)
 -- Info
 
 Tab5Section:NewLabel("Sat007#1969")
-Tab6Section:NewLabel("Added Hoho Hub")
+Tab6Section:NewLabel("RoGhoul Added")
