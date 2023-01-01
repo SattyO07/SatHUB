@@ -7,7 +7,8 @@ local Tab1 = Window:NewTab("Hacks")
 local Tab2 = Window:NewTab("Settings")
 local Tab3 = Window:NewTab("Info")
 local Tab1Section = Tab1:NewSection("Guis")
-local Tab2Section = Tab1:NewSection("Scripts")
+local Tab2Section = Tab1:NewSection("Server")
+local Tab3Section = Tab1:NewSection("Mics")
 local Tab3Section = Tab2:NewSection("Keybind")
 local Tab4Section = Tab2:NewSection("Color")
 local Tab5Section = Tab3:NewSection("DISCORD:")
@@ -15,10 +16,16 @@ local Tab6Section = Tab3:NewSection("UPDATE:")
 
 -- Hacks
 
-Tab1Section:NewButton("Infinite Yield", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() 
+Tab1Section:NewButton("Infinite Yield", "Any Game", function()   Loadstring:loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
 Tab1Section:NewButton("Stk Gui", "Work on Stk", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/StkGui'))() 
+end)
+
+Tab1Section:NewButton("RoGhoul  Gui", "Work on Roghoul", function()   loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
+end)
+
+Tab1Section:NewButton("Hoho Hub", "Work on Bloxfruit", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 end)
 
 Tab1Section:NewButton("Afk Gui", "Any Game", function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
@@ -27,18 +34,16 @@ end)
 Tab1Section:NewButton("Trollface Gui", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/TrollFaceGui'))() 
 end)
 
-Tab1Section:NewButton("RoGhoul  Gui", "Work on Roghoul", function()   loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
-end)
-
-Tab1Section:NewButton("Hoho Hun", "Work on Bloxfruit", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
-end)
-
-Tab2Section:NewButton("AntiFling", "Any Game", function()
+Tab3Section:NewButton("AntiFling", "Any Game", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/AntiFling'))() 
 end)
 
 Tab2Section:NewButton("Server Hop", "Any Game", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SattyO07/Scripts/main/Server%20Hop",true))();
+end)
+
+Tab2Section:NewButton("Server Small", "Any Game", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SattyO07/Scripts/main/Small%20server"))()
 end)
 
 Tab2Section:NewButton("Server Rejoin", "Any Game", function()
@@ -60,3 +65,4 @@ end)
 
 Tab5Section:NewLabel("Sat007#1969")
 Tab6Section:NewLabel("RoGhoul Added")
+Tab7Section:NewLabel("Fix Title")
