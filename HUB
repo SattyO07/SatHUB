@@ -1,1 +1,89 @@
-loadstring("\45\45\32\80\117\116\32\115\99\114\105\112\116\32\104\101\114\101\10")()
+-- Nonitification 
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "SatHub";
+Text = "Loading..."; 
+Duration = 3 ;
+})
+
+wait(5)
+game.StarterGui:SetCore("SendNotification", {
+Title = "SatHub";
+Text = "Loaded Successfully.";
+Duration = 3 ;
+})
+
+-- Starting
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("SatHub V3", "Ocean")
+
+-- Tabs
+
+local Tab1 = Window:NewTab("Hacks")
+local Tab2 = Window:NewTab("Settings")
+
+-- Section
+
+local Tab1Section = Tab1:NewSection("Guis")
+local Tab2Section = Tab1:NewSection("Others")
+local Tab3Section = Tab1:NewSection("Server")
+local Tab4Section = Tab1:NewSection("Mics")
+local Tab5Section = Tab2:NewSection("Keybind")
+
+-- Games
+
+Tab1Section:NewButton("BloxFruit", "Work on Bloxfruit", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Free/BloxFruitFree.lua'))()
+end)
+
+Tab1Section:NewButton("RoGhoul Gui", "Work on Roghoul", function()   loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
+end)
+
+Tab1Section:NewButton("Stk Gui", "Work on Stk", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/StkGui'))() 
+end)
+
+-- Others
+
+Tab2Section:NewButton("Afk Gui", "Any Game", function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+end)
+
+Tab2Section:NewButton("Infinite Yield", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Tab2Section:NewButton("Keyboard", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/Keyboard'))()
+end)
+
+Tab2Section:NewButton("Rtx", "Any Game", function()   loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()
+end)
+
+Tab2Section:NewButton("ShiftLock", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/ShiftLock'))()
+end)
+
+Tab2Section:NewButton("Trollface Gui", "Any Game", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/TrollFaceGui'))() 
+end)
+
+-- Servers
+
+Tab3Section:NewButton("Server Hop", "Any Game", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SattyO07/Scripts/main/Server%20Hop",true))();
+end)
+
+Tab3Section:NewButton("Server Rejoin", "Any Game", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1gtVMUz3"))()
+end)
+
+Tab3Section:NewButton("Server Small", "Any Game", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SattyO07/Scripts/main/Small%20server"))()
+end)
+
+-- Mics
+
+Tab4Section:NewButton("AntiFling", "Any Game", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/AntiFling'))() 
+end)
+
+-- Settings
+
+Tab5Section:NewKeybind("Keybind", "Open/Close UI", Enum.KeyCode.E, function()
+	Library:ToggleUI()
+end)
