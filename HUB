@@ -64,10 +64,6 @@ end)
 
 -- Servers
 
-Tab3Section:NewButton("Server Hop", "Any Game", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SattyO07/Scripts/main/Server%20Hop",true))();
-end)
-
 Tab3Section:NewButton("Server Rejoin", "Any Game", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/1gtVMUz3"))()
 end)
