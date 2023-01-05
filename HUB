@@ -33,7 +33,7 @@ local Tab5Section = Tab2:NewSection("Keybind")
 
 -- Games
 
-Tab1Section:NewButton("BloxFruit", "Work on Bloxfruit", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Free/BloxFruitFree.lua'))()
+Tab1Section:NewButton("BloxFruit", "Work on Bloxfruit", function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/NeaPchX2/Playback-X-HUB/main/PlaybackXHub.lua"))()
 end)
 
 Tab1Section:NewButton("RoGhoul Gui", "Work on Roghoul", function()   loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
