@@ -42,6 +42,9 @@ end)
 Tab1Section:NewButton("RoGhoul Gui", "Work on Roghoul", function()   loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
 end)
 
+Tab1Section:NewButton("Evade Gui", "Work on Evade", function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+end)
+
 Tab1Section:NewButton("Stk Gui", "Work on Stk", function()   loadstring(game:HttpGet('https://raw.githubusercontent.com/SattyO07/Scripts/main/StkGui'))() 
 end)
 
